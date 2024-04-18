@@ -1,5 +1,5 @@
 # wradio
-Simple radio player using vlc and wofi
+Simple radio player using vlc and wmenu
 
 ## installation
 
