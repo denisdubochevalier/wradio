@@ -1,0 +1,8 @@
+#!/bin/bash
+
+radio=$(cat "$HOME"/.config/wradio/stations | wmenu -N272727 -nc2d89c -M668f31 -mc2d89c -S668f31 -sc2d89c -p Station)
+
+if [[ "$radio" == "" ]]; then
+  exit
+fi
+echo $radio | awk -F"|" '{print $2}' | xargs cvlc
